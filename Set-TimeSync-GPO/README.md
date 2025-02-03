@@ -7,6 +7,9 @@ by applying **Local Group Policy (GPO) settings via Registry modifications**.
 - Some systems have **delayed synchronization (default is once every 7 days)**.
 - Using **Local GPO settings ensures permanent enforcement** of time sync policies.
 
+**Real-world example:**\
+In several games, I would notice the game would either run slow or fast, and thee system clock would fall behind by >10 minutes in a 30-minute span. This is occuring as my CMOS clock has become unreliable even after a battery swap, and for an unknown reason Windows Time Service was offline. 
+
 ## What This Script Does:
 1. **Forces Windows Time Service (W32Time) to always start automatically**.
 2. **Applies Local Group Policy (GPO) settings via Registry**:
